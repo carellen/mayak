@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :stocks, only: :index
+
+  namespace :stocks do
+    resource :latest, only: :show
+  end
+
+  root to: 'stocks/latests#show'
 end

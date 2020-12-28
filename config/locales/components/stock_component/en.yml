@@ -1,0 +1,5 @@
+en:
+  stock_component:
+    in_stock: 'In Stock'
+    to_client: 'To Client'
+    from_client: 'From Client'

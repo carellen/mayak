@@ -1,0 +1,6 @@
+p
+  = t('.title')
+  | &nbsp;
+  | (Wildberries)
+= turbo_stream_from 'latest'
+= render StockComponent.new(latest: @latest)

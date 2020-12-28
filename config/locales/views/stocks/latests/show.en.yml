@@ -1,0 +1,5 @@
+en:
+  stocks:
+    latests:
+      show:
+        title: 'Actual stock'

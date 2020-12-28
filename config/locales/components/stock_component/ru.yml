@@ -1,0 +1,5 @@
+ru:
+  stock_component:
+    in_stock: 'на складе'
+    to_client: 'едет к клиенту'
+    from_client: 'едет от клиента'

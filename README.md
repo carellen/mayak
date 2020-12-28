@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Steps to run:
 
-Things you may want to cover:
+```
+git pull https://github.com/carellen/mayak.git
+```
 
-* Ruby version
+```
+cd mayak
+```
 
-* System dependencies
+```
+whenever --update-crontab
+```
 
-* Configuration
+```
+redis-server
+```
 
-* Database creation
+```
+bundle exec sidekiq
+```
 
-* Database initialization
+```
+rails db:create db:migrate
+```
 
-* How to run the test suite
+```
+rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

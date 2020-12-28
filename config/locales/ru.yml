@@ -1,0 +1,22 @@
+ru:
+  number:
+    currency:
+      format:
+        format: "%n %u"
+        unit: "р."
+        separator: ""
+        delimiter: " "
+        precision: 0
+        significant: false
+        strip_insignificant_zeros: false
+  quantity:
+    centi:
+      one: "шт."
+      other: "шт."
+    unit:
+      one: "шт."
+      other: "шт."
+    thousand:
+      one: "тыс. шт."
+      other: "тыс. шт."
+    billion: "млн. шт."

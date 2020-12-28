@@ -1,0 +1,29 @@
+table#stock_latest
+  thead
+    tr
+      th colspan='3' = @latest.id
+  tbody
+    tr
+      td
+        = number_to_human(@latest.total_amount, units: :quantity)
+        | &nbsp;
+        | /
+      td = number_to_currency(@latest.total_sum)
+      td = t('.in_stock')
+    tr
+      td
+        = number_to_human(@latest.to_client_amount, units: :quantity)
+        | &nbsp;
+        | /
+      td = number_to_currency(@latest.to_client_sum)
+      td = t('.to_client')
+    tr
+      td
+        = number_to_human(@latest.from_client_amount, units: :quantity)
+        | &nbsp;
+        | /
+      td
+        | -
+        | &nbsp;
+        = number_to_currency(@latest.from_client_sum)
+      td = t('.from_client')
