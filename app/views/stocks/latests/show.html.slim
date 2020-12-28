@@ -1,6 +1,10 @@
-p
-  = t('.title')
-  | &nbsp;
-  | (Wildberries)
-= turbo_stream_from 'latest'
-= render StockComponent.new(latest: @latest)
+.container style='text-align: center;'
+  p
+    = t('.title')
+    | &nbsp;
+    | (Wildberries)
+  = turbo_stream_from 'latest'
+  = render StockComponent.new(latest: @latest)
+
+  #fun style='margin-top: 200px;' data-controller='confetti'
+    = button_to('Happy New Year!', '', data: { action: 'confetti#fun'})
