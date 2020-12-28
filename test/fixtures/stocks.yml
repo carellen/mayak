@@ -1,0 +1,7 @@
+latest:
+    total_amount: 3
+    total_sum: 300
+    to_client_amount: 2
+    to_client_sum: 200
+    from_client_amount: 1
+    from_client_sum: 100

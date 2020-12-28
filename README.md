@@ -10,6 +10,8 @@ git pull https://github.com/carellen/mayak.git
 cd mayak
 ```
 
+* rename `.env.sample` to `.env` and add correct data 
+
 ```
 whenever --update-crontab
 ```
