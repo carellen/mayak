@@ -1,5 +1,5 @@
 import { Controller } from "stimulus"
-import confetti from "https://cdn.skypack.dev/canvas-confetti"
+import confetti from "confetti"
 
 export default class extends Controller {
   fun() {
